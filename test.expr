@@ -1,0 +1,31 @@
+pone := player(0,0,"P","W","D","S","A")
+ptwo := player(5,5,"Q","I","L","K","J")
+mone := map(10,10,".","*")
+done := door(9,1,"#")
+dtwo := door(2,6,"#")
+mone := mone addD done
+mone := mone addD dtwo
+mtwo := map(20,20,"-","|")
+eone := enemy(13,14,"E",20)
+etwo := enemy(18,19,"A",20)
+dthree := door(17,17,"#")
+mtwo := mtwo addE eone
+mtwo := mtwo addE etwo
+mtwo := mtwo addD dthree
+mthree := map(18,18,"^","+")
+ethree := enemy(1,1,"B",20)
+efour := enemy(1,9,"C",20)
+efive := enemy(9,1,"D",20)
+dfour := door(5,5,"#")
+mthree := mthree addE ethree
+mthree := mthree addE efour
+mthree := mthree addE efive
+mthree := mthree addD dfour
+g := game(30)
+g := g addM mone
+g := g addM mtwo
+g := g addM mthree
+g := g addP pone
+g := g addP ptwo
+run g
+$$
