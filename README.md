@@ -1,6 +1,10 @@
 # A Guide to Programming in Loomine
 Welcome to Loomine, an easy to use Console Game Engine Language! Follow this guide to learn how to create your own games!
 
+## Authors
+Matthew Kaczmarek, 
+Ryan Trader
+
 ## What is Loomine?
 Loomine is a programming language that lets you easily build custom ASCII art console games! It is a language that compiles down to C++.
 
